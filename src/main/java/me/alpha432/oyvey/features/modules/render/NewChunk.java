@@ -5,7 +5,7 @@ import me.alpha432.oyvey.features.setting.Setting;
 
 
 
-public class NewerNewChunks extends Module {
+public class NewChunks extends Module {
 	public enum DetectMode {
 		Normal,
 		IgnoreBlockExploit,
@@ -390,8 +390,8 @@ public class NewerNewChunks extends Module {
 			Paths.get("NewChunkData.txt"),
 			Paths.get("BlockExploitChunkData.txt")
 	));
-	public NewerNewChunks() {
-		super(Trouser.baseHunting,"NewerNewChunks", "Detects new chunks by scanning the order of chunk section palettes. Can also check liquid flow, and block ticking packets.");
+	public NewChunks() {
+		super(Trouser.baseHunting,"NewChunks", "Detects new chunks by scanning the order of chunk section palettes. Can also check liquid flow, and block ticking packets.");
 	}
 	private void clearChunkData() {
 		newChunks.clear();
